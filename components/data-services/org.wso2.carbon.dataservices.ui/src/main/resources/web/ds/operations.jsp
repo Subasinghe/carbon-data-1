@@ -106,7 +106,7 @@
                         	}
                             %>
             <tr>
-                <input type="hidden" id="<%=operation.getName()%>" name="<%=operation.getName()%>" value="<%=operation.getName()%>" />
+                <input type="hidden" id="<%=forHtmlAttribute(operation.getName())%>" name="<%=forHtmlAttribute(operation.getName())%>" value="<%=forHtmlAttribute(operation.getName())%>" />
                 <td><%=operation.getName()%></td>
                 <%if(operation.getCallQuery() == null) { %>
                 	<td><%=Encode.forHtmlContent(queryList)%></td>
